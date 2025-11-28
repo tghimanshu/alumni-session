@@ -1,26 +1,41 @@
 <!DOCTYPE html>
+<!--
+  Main HTML file for the Bunty Portfolio website.
+  This file defines the structure of the webpage, utilizing Bootstrap for layout and styling.
+-->
 <html lang="en">
+  <!-- Head section containing metadata, title, and external stylesheets links. -->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bunty | Portfolio</title>
 
+    <!-- Bootstrap CSS CDN link for styling framework -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <!-- Bootstrap Icons CDN link -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
+    <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="styles.css" />
   </head>
+
+  <!-- Body section containing the visible content of the page.
+       Classes used:
+       - bg-dark: Sets the background color to dark.
+       - d-flex, justify-content-center, align-items-center: Flexbox utilities to center content.
+  -->
   <body class="bg-dark d-flex justify-content-center align-items-center">
     <div class="container">
       <div class="row">
+        <!-- Left Column: Profile Section (Image, Name, Title) -->
         <div
           class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center"
         >
@@ -32,12 +47,15 @@
           <h1 class="text-center text-light">Bunty</h1>
           <p class="text-light fst-italic">Web Developer</p>
         </div>
+
+        <!-- Right Column: Details Section (About Me, Skills, Description, Actions) -->
         <div class="col-12 col-md-8">
           <div class="card bg-dark text-light">
             <div class="card-header">
               <div class="card-title">About Me</div>
             </div>
             <div class="card-body">
+              <!-- Skills Section displaying badges -->
               <div class="skills pills mb-3">
                 <span class="badge bg-primary">HTML5</span>
                 <span class="badge bg-primary">CSS3</span>
@@ -52,6 +70,8 @@
                 <span class="badge bg-primary">Angular</span>
                 <span class="badge bg-primary">React</span>
               </div>
+
+              <!-- Description Paragraph -->
               <p class="mb-4">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
                 dignissimos, neque ullam nihil fugiat qui laboriosam esse hic,
@@ -59,6 +79,8 @@
                 repudiandae distinctio voluptatem rem! Nesciunt impedit nemo
                 iure nisi velit neque ab eveniet voluptas quas.
               </p>
+
+              <!-- Action Buttons and Social Icons -->
               <div
                 class="d-flex flex-column flex-lg-row justify-content-between align-items-center"
               >
@@ -78,6 +100,8 @@
         </div>
       </div>
     </div>
+
+    <!-- Bootstrap Bundle JS (includes Popper) -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
