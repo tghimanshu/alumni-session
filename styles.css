@@ -1,3 +1,18 @@
+/**
+ * styles.css
+ *
+ * This file contains custom styles for the Portfolio website.
+ * It overrides or supplements the default Bootstrap styles.
+ */
+
+/*
+ * Body Selector
+ *
+ * Purpose: Ensures the body takes up the full viewport width and height.
+ * Properties:
+ * - width: 100vw (100% of the viewport width)
+ * - height: 100vh (100% of the viewport height)
+ */
 body {
   width: 100vw;
   height: 100vh;
